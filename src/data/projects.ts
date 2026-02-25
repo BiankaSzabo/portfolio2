@@ -22,7 +22,7 @@ export const projects: Project[] = [
     image: "/images/css-frameworks.png",
     liveUrl: "https://css-frameworks-rust.vercel.app",
     repoUrl: "https://github.com/BiankaSzabo/css-frameworks",
-    techTags: ["HTML5", "CSS3", "Tailwind CSS", "Responsive Design"],
+    techTags: ["HTML5", "JavaScript", "Tailwind CSS", "Vite", "Responsive Design"],
     features: [
       "Fully responsive layout using CSS framework utilities",
       "Modern and clean user interface design",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     liveUrl: "https://semester-project-2-auctionhouse.vercel.app/",
     repoUrl:
       "https://github.com/EkremGursoy/semester-project-2-auctionhouse",
-    techTags: ["JavaScript", "REST API", "Authentication", "Responsive Design"],
+    techTags: ["JavaScript", "Tailwind CSS", "Vite", "REST API", "Authentication"],
     features: [
       "User registration and authentication system",
       "Create, edit, and delete auction listings",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     liveUrl: "https://jsfw-2025-v1-bianka-jsframeworks.vercel.app",
     repoUrl:
       "https://github.com/BiankaSzabo/jsfw-2025-v1-bianka-jsframeworks",
-    techTags: ["React", "JavaScript", "API Integration", "React Router"],
+    techTags: ["React", "TypeScript", "Tailwind CSS", "API Integration", "React Router"],
     features: [
       "Component-based architecture with React",
       "Client-side routing with React Router",

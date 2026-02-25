@@ -14,7 +14,8 @@ export default function HeroSection() {
             </h1>
             <p className="text-xl text-muted-foreground max-w-125 mx-auto md:mx-0 mb-6 leading-relaxed">
               A passionate frontend developer crafting visually stunning and
-              user-friendly web experiences with HTML, CSS, and JavaScript.
+              user-friendly web experiences with React, TypeScript, and Tailwind
+              CSS.
             </p>
             <div className="flex gap-4 mb-6 justify-center md:justify-start">
               <Button href="#projects">

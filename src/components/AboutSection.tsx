@@ -1,4 +1,5 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaPaintBrush } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPaintBrush } from "react-icons/fa";
+import { SiTypescript, SiTailwindcss } from "react-icons/si";
 
 const skills = [
   {
@@ -15,6 +16,21 @@ const skills = [
     icon: <FaJs />,
     title: "JavaScript",
     description: "Interactive elements and dynamic content",
+  },
+  {
+    icon: <FaReact />,
+    title: "React",
+    description: "Component-based UIs with hooks and modern patterns",
+  },
+  {
+    icon: <SiTypescript />,
+    title: "TypeScript",
+    description: "Type-safe code for scalable, maintainable projects",
+  },
+  {
+    icon: <SiTailwindcss />,
+    title: "Tailwind CSS",
+    description: "Utility-first styling for rapid, consistent design",
   },
   {
     icon: <FaPaintBrush />,
@@ -46,9 +62,10 @@ export default function AboutSection() {
               designs.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With strong fundamentals in the core web technologies, I transform
-              design concepts into fully functional websites that work seamlessly
-              across all devices and browsers.
+              With strong fundamentals in the core web technologies and modern
+              tools like React, TypeScript, and Tailwind CSS, I transform design
+              concepts into fully functional websites that work seamlessly across
+              all devices and browsers.
             </p>
           </div>
 
