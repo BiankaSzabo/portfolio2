@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  --color-background: hsl(300, 20%, 99%);
+  --color-foreground: hsl(300, 10%, 20%);
+  --color-primary: hsl(320, 70%, 60%);
+  --color-primary-foreground: hsl(320, 10%, 98%);
+  --color-muted: hsl(300, 10%, 96%);
+  --color-muted-foreground: hsl(300, 10%, 40%);
+  --color-border: hsl(300, 10%, 90%);
+  --color-primary-light: hsla(320, 70%, 95%, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+a,
+button {
+  cursor: pointer;
+}
