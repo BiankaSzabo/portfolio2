@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router";
-import { FaArrowLeft, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaArrowLeft, FaExternalLinkAlt, FaGithub, FaLink, FaCheck } from "react-icons/fa";
 import { projects } from "../data/projects";
 import TechTag from "../components/TechTag";
 import Button from "../components/Button";
@@ -7,6 +8,13 @@ import Button from "../components/Button";
 export default function ProjectPage() {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   if (!project) {
     return (
@@ -36,9 +44,19 @@ export default function ProjectPage() {
 
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             <div className="md:w-1/2">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                {project.title}
-              </h1>
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
+                <h1 className="text-3xl md:text-5xl font-bold">
+                  {project.title}
+                </h1>
+                <button
+                  onClick={handleCopyLink}
+                  title="Copy link to this page"
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary transition-colors shrink-0"
+                >
+                  {copied ? <FaCheck className="text-green-500" /> : <FaLink />}
+                  <span>{copied ? "Copied!" : "Copy link"}</span>
+                </button>
+              </div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 {project.description}
               </p>

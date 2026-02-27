@@ -4,9 +4,9 @@ import { FaCode, FaBars, FaTimes } from "react-icons/fa";
 import SocialLinks from "./SocialLinks";
 
 const navLinks = [
-  { label: "About", href: "/#about" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Contact", href: "/#contact" },
+  { label: "About", to: "/#about" },
+  { label: "Projects", to: "/#projects" },
+  { label: "Contact", to: "/#contact" },
 ];
 
 export default function Layout() {
@@ -25,22 +25,22 @@ export default function Layout() {
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.to}
                 className="text-sm text-foreground hover:text-primary transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
-          <a
-            href="/#contact"
+          <Link
+            to="/#contact"
             className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:brightness-110 hover:shadow-md transition-all"
           >
             Get in Touch
-          </a>
+          </Link>
 
           {/* Mobile hamburger */}
           <button
@@ -56,22 +56,22 @@ export default function Layout() {
         {menuOpen && (
           <nav className="md:hidden border-t border-border bg-background px-4 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.to}
                 className="text-foreground py-1"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="/#contact"
+            <Link
+              to="/#contact"
               className="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium"
               onClick={() => setMenuOpen(false)}
             >
               Get in Touch
-            </a>
+            </Link>
           </nav>
         )}
       </header>

@@ -43,7 +43,7 @@ export const projects: Project[] = [
       "A semester project building a full-featured online auction platform. Users can create listings, place bids, and manage their profiles in a dynamic, real-time bidding environment.",
     longDescription:
       "The Auction House was developed as a semester project to build a complete online auction platform. Users can register, create auction listings with images and descriptions, place bids on items, and track their bidding history. The project features user authentication, dynamic bid updates, and a clean interface for browsing active auctions. It was a comprehensive exercise in building interactive web applications with real-time data.",
-    image: "/images/auction-house.png",
+    image: "/images/auction-house.webp",
     liveUrl: "https://semester-project-2-auctionhouse.vercel.app/",
     repoUrl:
       "https://github.com/EkremGursoy/semester-project-2-auctionhouse",
@@ -68,10 +68,10 @@ export const projects: Project[] = [
       "A JavaScript frameworks course assignment showcasing modern frontend development with React. Features component-based architecture, state management, and API integration.",
     longDescription:
       "This project was built as a course assignment to demonstrate proficiency with modern JavaScript frameworks, specifically React. It features a component-based architecture, client-side routing, state management, and integration with external APIs. The project showcases best practices in React development including hooks, context, and responsive design. It served as a hands-on exercise in building scalable, maintainable frontend applications.",
-    image: "/images/js-frameworks.png",
+    image: "/images/js-frameworks.webp",
     liveUrl: "https://jsfw-2025-v1-bianka-jsframeworks.vercel.app",
     repoUrl:
-      "https://github.com/BiankaSzabo/jsfw-2025-v1-bianka-jsframeworks",
+      "https://github.com/NoroffFEU/jsfw-2025-v1-bianka-jsframeworks",
     techTags: ["React", "TypeScript", "Tailwind CSS", "API Integration", "React Router"],
     features: [
       "Component-based architecture with React",
